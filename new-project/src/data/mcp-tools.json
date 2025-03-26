@@ -1,0 +1,284 @@
+{
+  "categories": {
+    "开发工具": {
+      "name": "开发工具",
+      "description": "提升开发工作流程和环境管理的工具",
+      "tools": [
+        {
+          "id": "figma-context-mcp",
+          "title": "Figma Context MCP",
+          "description": "为代码助手提供直接访问Figma数据的能力，帮助实现一次性设计实现",
+          "imageUrl": "/images/figma-mcp.jpg",
+          "link": "https://github.com/GLips/Figma-Context-MCP",
+          "tags": [
+            "设计",
+            "开发",
+            "Figma"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx figma-developer-mcp --figma-api-key=<your-figma-api-key>"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "figma-developer-mcp",
+                "--figma-api-key=YOUR_API_KEY"
+              ],
+              "env": {
+                "FIGMA_API_KEY": "YOUR_API_KEY"
+              }
+            }
+          }
+        },
+        {
+          "id": "docker-mcp",
+          "title": "Docker MCP",
+          "description": "通过MCP进行Docker容器管理和操作",
+          "imageUrl": "/images/docker-mcp.jpg",
+          "link": "https://github.com/QuantGeekDev/docker-mcp",
+          "tags": [
+            "Docker",
+            "容器化",
+            "DevOps"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx docker-mcp-server init"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "docker-mcp-server",
+                "init"
+              ],
+              "env": {
+                "_placeholder": ""
+              }
+            }
+          }
+        },
+        {
+          "id": "openapi-mcp-server",
+          "title": "OpenAPI MCP Server",
+          "description": "使用OpenAPI规范(v3)连接任何HTTP/REST API服务器",
+          "imageUrl": "/images/openapi-mcp.jpg",
+          "link": "https://github.com/snaggle-ai/openapi-mcp-server",
+          "tags": [
+            "API",
+            "OpenAPI",
+            "REST"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx openapi-mcp-server init"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "openapi-mcp-server",
+                "init"
+              ],
+              "env": {}
+            }
+          }
+        }
+      ]
+    },
+    "AI助手": {
+      "name": "AI助手",
+      "description": "AI对话和生成工具",
+      "tools": [
+        {
+          "id": "openai-mcp",
+          "title": "OpenAI MCP",
+          "description": "与OpenAI的最智能模型进行对话",
+          "imageUrl": "/images/openai-mcp.jpg",
+          "link": "https://github.com/mzxrai/mcp-openai",
+          "tags": [
+            "AI",
+            "ChatGPT",
+            "对话"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx @mzxrai/mcp-openai@latest"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "-y",
+                "@mzxrai/mcp-openai@latest"
+              ],
+              "env": {
+                "OPENAI_API_KEY": "YOUR_API_KEY"
+              }
+            }
+          }
+        },
+        {
+          "id": "perplexity-mcp",
+          "title": "Perplexity MCP",
+          "description": "与Perplexity API交互",
+          "imageUrl": "/images/perplexity-mcp.jpg",
+          "link": "https://github.com/tanigami/mcp-server-perplexity",
+          "tags": [
+            "AI",
+            "搜索",
+            "问答"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx @mcp/perplexity-server"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "@mcp/perplexity-server"
+              ],
+              "env": {
+                "PERPLEXITY_API_KEY": "YOUR_API_KEY"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "生产力工具": {
+      "name": "生产力工具",
+      "description": "提高工作效率的工具",
+      "tools": [
+        {
+          "id": "notion-mcp",
+          "title": "Notion MCP",
+          "description": "与Notion API集成，管理个人待办事项列表",
+          "imageUrl": "/images/notion-mcp.jpg",
+          "link": "https://github.com/danhilse/notion_mcp",
+          "tags": [
+            "笔记",
+            "任务管理",
+            "协作"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx @notion/mcp-server --api-key=YOUR_API_KEY"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "@notion/mcp-server"
+              ],
+              "env": {
+                "NOTION_API_KEY": "YOUR_API_KEY"
+              }
+            }
+          }
+        },
+        {
+          "id": "obsidian-mcp",
+          "title": "Obsidian MCP",
+          "description": "通过REST API与Obsidian交互",
+          "imageUrl": "/images/obsidian-mcp.jpg",
+          "link": "https://github.com/MarkusPfundstein/mcp-obsidian",
+          "tags": [
+            "笔记",
+            "知识管理",
+            "Markdown"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx obsidian-mcp-server"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "obsidian-mcp-server"
+              ],
+              "env": {}
+            }
+          }
+        },
+        {
+          "id": "jira-mcp",
+          "title": "Jira MCP Server",
+          "description": "通过JQL和API读取Jira数据并执行创建和编辑工单的请求",
+          "imageUrl": "/images/jira-mcp.jpg",
+          "link": "https://github.com/KS-GEN-AI/jira-mcp-server",
+          "tags": [
+            "项目管理",
+            "任务跟踪",
+            "协作"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx @jira/mcp-server --api-key=YOUR_API_KEY"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "@jira/mcp-server"
+              ],
+              "env": {
+                "JIRA_API_KEY": "YOUR_API_KEY"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "数据工具": {
+      "name": "数据工具",
+      "description": "数据处理和分析工具",
+      "tools": [
+        {
+          "id": "excel-mcp",
+          "title": "Excel MCP Server",
+          "description": "提供工作簿创建、数据操作、格式化和高级功能（图表、数据透视表、公式）",
+          "imageUrl": "/images/excel-mcp.jpg",
+          "link": "https://github.com/haris-musa/excel-mcp-server",
+          "tags": [
+            "Excel",
+            "数据分析",
+            "办公"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx excel-mcp-server"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "excel-mcp-server"
+              ],
+              "env": {}
+            }
+          }
+        },
+        {
+          "id": "sql-analyzer-mcp",
+          "title": "SQL Analyzer MCP",
+          "description": "使用SQLGlot提供SQL分析、代码检查和方言转换",
+          "imageUrl": "/images/sql-mcp.jpg",
+          "link": "https://github.com/j4c0bs/mcp-server-sql-analyzer",
+          "tags": [
+            "SQL",
+            "数据库",
+            "分析"
+          ],
+          "installation": {
+            "auto": {
+              "command": "npx sql-analyzer-mcp"
+            },
+            "manual": {
+              "command": "npx",
+              "args": [
+                "sql-analyzer-mcp"
+              ],
+              "env": {}
+            }
+          }
+        }
+      ]
+    }
+  }
+}
